@@ -1,0 +1,457 @@
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 98px;
+  margin-right: 98px;
+}
+
+
+/*socicons */
+
+[class^="socicon-"],
+[class*=" socicon-"] {
+  font-family: 'Socicon' ;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.socicon-instagram:hover {
+    color: red;
+}
+
+.socicon-facebook:hover {
+    color: blue;
+}
+
+
+.socicon-instagram:before {
+  content: "\e044";
+  font-size: 30px;
+  color: white;
+}
+
+.socicon-facebook:before {
+  content: "\e028";
+  font-size: 30px;
+  color: white;
+}
+
+.container_left {
+  float: left;
+  background-color: #FF6036;
+  width: 50%;
+  height: 670px;
+}
+.container_right {
+  float: right;
+  background-color: #2B2B2B;
+  width: 50%;
+  height: 670px;
+}
+
+.container_right_kort {
+  height: 70px;
+  width: 50%;
+  float: right;
+}
+
+.container_left_kort {
+  height: 70px;
+  width: 50%;
+  float: left;
+}
+
+/*navigatie*/
+.navigatie{
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F2DC5D;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-top: 50px;
+    margin-left: 98px;
+    height: 780px;
+}
+
+.navigatie a {
+    padding: 8px 8px 10px 100px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #white;
+    display: block;
+    transition: 0.3s;
+}
+
+.navigatie a:hover, .offcanvas a:focus {
+    color: black;
+}
+
+.navigatie .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .navigatie { padding-top: 15px;}
+    .navigatie a { font-size: 18px;}
+}
+
+/*einde navigatie*/
+
+/*index */
+
+.slogan {
+  padding:5px 5px 5px 5px;
+  border: 5px solid #FF6036;
+  margin-top: -450px;
+  margin-left: 450px;
+  width: 200px;
+  background-color: #F2DC5D;
+}
+#sloganhome {
+  text-align: center;
+}
+
+.ruit {
+  border: solid 5px #F2DC5D;
+  width: 100px;
+  height: 100px;
+}
+.header {
+    background-color:#F2DC5D;
+    color: #000000;
+    text-align: center;
+    float: center;
+    margin-top: 0px
+}
+
+/*home*/
+.homecolor {
+    background-color: #FF6036;
+}
+
+#square {
+    height: 600px;
+}
+
+.homepagelogo {
+   text-align: center;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+color: #FFFFFF;
+border: 2px solid #F2DC5D;
+padding: 5px 5px 2px 2px;
+}
+ 
+input,
+textarea {
+  padding: 1rem 1rem;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+ 
+input ~ span,
+textarea ~ span {
+  display: block;
+  width: 0;
+  height: 2px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.125s ease;
+  transition: all 0.125s ease;
+}
+ 
+input:focus,
+textarea:focus { outline: 0; }
+ 
+input:focus ~ span, 54
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+ 
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+table {
+    border-spacing: 30px;
+    padding-top: 50px;
+}
+
+
+.navigation:hover {
+    background-color: #FF6036;
+}
+
+a.active {
+    background-color: #FF6036;
+    color: #black;
+    font-family: 'Arvo', serif;
+    font-size: 70px
+}
+
+/*contact*/
+/*stijl contactformulier*/
+.contactformulier {
+  width: 750px;
+  height: 600px;
+  padding: 10px 10px 10px 10px;
+  background-color: #FF6036;
+}
+
+.field {
+  width: 300px;
+  padding:3px;
+  border:none;
+  background:none;
+  border-bottom: 2px solid #F2DC5D;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.fieldlang {
+  width: 500px;
+  padding: 3px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #F2DC5D;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+textarea {
+  background-color: none;
+  width: 500px;
+  border: none;
+  border-bottom: 2px solid #F2DC5D;
+  outline: none;
+
+}
+
+::-webkit-input-placeholder { color: black; }
+::-moz-placeholder {color: black; }
+:-ms-input-placeholder { color: black; } 
+:-o-input-placeholder { color: black; } 
+
+#bericht {
+  height: 100px;
+
+
+}
+#contact {
+  width: 700px;
+  height: 100px;
+}
+
+html{
+  font-family: "Josefin Slab", sans-serif;
+}
+
+.group 			  { 
+  position:relative; 
+  margin-top: 30px;
+}
+
+#buttonverzend {
+  color: white;
+  background-color: #FF6036;
+  padding: 10px 10px;
+  border: 2px solid #F2DC5D;
+  margin-top: 10px;
+  margin-bottom: 300px;
+  width:100px;
+  cursor: pointer;
+}
+
+#buttonverzend:hover {
+  background-color: #F2D25C;
+  color: black;
+}
+
+.telefoon {
+  background-color: #FF7853;
+  padding: 40px 40px;
+}
+
+.adres {
+  background-color: #FFA58C;
+  padding: 40px 40px;
+}
+
+/*portfolio */
+.portfoliotable {
+  border: 3px solid #F2DC5D;
+  float: left;
+  color: white;
+  background-color: #FF6036
+}
+
+ul {
+    padding:0;
+}
+ul.gallery li {
+  display: inline-block;
+}
+
+.portfolioitem {
+  height: 250px;
+}
+}
+label {
+  cursor: pointer;
+  color: #FF6036;
+  background: #FF6036;
+  border: 2px solid #F2D25C
+  padding: 5px 19px;
+}
+
+img {
+  padding: 5px;
+  border: 1px solid #B2B2B2;
+}
+
+input#sgrafischdesign:checked ~ .gallery li:not(.graphic design), input#webdesign:checked ~ .gallery li:not(.webdesign), 
+input#logodesign:checked ~ .gallery li:not(.logo design) , input#fotografie:checked ~ .gallery li:not(.fotografie){
+  opacity: 0.1;
+}
+
+
+
+
+/*diensten */
+
+.boxdiensten {
+  background-color: #FF6036;
+  padding: 40px 40px;
+}
+.boxdiensten2 {
+  background-color: #FF7853;
+  padding: 40px 40px;
+}
+.boxdiensten3 {
+  background-color: #FFA58C;
+  padding: 40px 40px;
+  margin-top: -350px;
+}
+
+
+.adres {
+  background-color: #FFA58C;
+  padding: 40px 40px;
+}
+
+/*overons */
+.teamlid {
+  display: block;
+  width: 350px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #FFFFFF;
+  filter: grayscale(100%)
+}
+
+#overons {
+  border-spacing: 0px;
+}
+
+
+
+.button {
+  background-color: #FF6036;
+  color: white;
+  font-family: 'Josefin Slab', serif;
+  font-size: 12px;
+  padding: 5px 5px 5px 5px;
+}
+
+.button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.boxteamlid1 {
+  background-color: #FF6036;
+  width: 350px;
+  border: none;
+  text-align: left;
+  padding-left:5px;
+}
+
+.boxteamlid2 {
+  background-color: #FF7853;
+  width: 350px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.boxteamlid3 {
+  background-color: #FFA58C;
+  width: 350px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+
+/*index*/
+
+.spreuk2 {
+  font-family: 'Megrim', serif;
+  font-size: 40px;       
+}
+
+#rotatetekst {
+   border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+}
+
+#rotatetekst:hover {
+  -webkit-transform: rotate(360deg);
+}
+
+
+      
+.spreuk {
+  display: inline-block;
+  border: 5px solid #FFFF00;
+  padding: 40px;
+  -webkit-transform: rotate(43deg);
+  -moz-transform: rotate(43deg);
+  -o-transform: rotate(43deg);
+  -ms-transform: rotate(43deg);
+  transform: rotate(43deg);
+  text-align: center;
+}
+
+#rotatetekst {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  text-align: center;
+}
+
+
+  

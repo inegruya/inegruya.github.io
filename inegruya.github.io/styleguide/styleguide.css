@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Josefin+Slab|Megrim');
+
+header {
+    background-color: #FFFF00;
+    padding: 15px;
+}
+
+header, h1 {
+    text-align: center;
+}
+
+.header {
+    font-family: 'Arvo', serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+ h1, h2, h3 {
+     font-family: 'Arvo', serif;
+ }
+
+ body {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ }
+
+td {
+    padding: 15px;
+    font-family: 'Josefin Slab', serif;
+    vertical-align: top;
+    font-size: 18px;
+}
+
+.tabeltypografie {
+    padding-right: 200px;
+}
+
+.Arvo {
+    font-family: 'Arvo', serif;
+}
+
+.color1 {
+    background-color: black;
+}
+
+.color2 {
+    background-color: lightgrey;
+}
+
+.color3 {
+    background-color: red;
+}
+
+.color5 {
+    background-color: #FFFF00;
+}
+
+.color4 {
+    background-color: blue;
+}
+
+.color6 {
+    background-color: #B3E5FC;
+}
+
+.color7 {
+    background-color: #82B3C9;
+}
+
+.color8 {
+    background-color: #E6FFFF;
+}
+
+.kleuren {
+    padding-right: 100px;
+    width: 80%;
+}
+
+.verzend {
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 300px;
+    color: white;
+    background-color: black;
+}
+
+.verzend:hover {
+    background-color: #FFFF00;
+    color: black;
+}
+
+.button {
+    background-color: #82B3C9;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 12px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+}
+
+.button:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+/*formulier */
+.inputMaterial 	{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+}
+
+.inputMaterial:focus 		{ outline:none;}
+
+label 				 {
+  color: #000000; 
+  font-size:18px;
+  font-weight:normal;
+  position: absolute;
+  pointer-events:none;
+  left:20px;
+  top:3500px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.inputMaterial:focus ~ label, .inputMaterial:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color: #82B3c9;
+}
+
+/*lijn onder invulvelden */
+.bar 	{ position:relative; display:block; width:700px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:3px; 
+  width:0;
+  bottom:0px; 
+  position:absolute;
+  background: #82B3c9; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
+  width:50%;
+}
+
+.inputMaterial:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+	from { background:#000000; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#000000; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#000000; }
+  to 	{ width:0; background:transparent; }
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+ font-size: 0.75em;
+ color: #8e44ad;
+ top: -2.25rem;
+ -webkit-transition: all 0.125s ease;
+ transition: all 0.125s ease;
+}
+ 
+.styled-input {
+  float: left;
+  width: 33.3333%;
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+ 
+.styled-input label {
+  color: #999;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+ 
+.styled-input.wide { width: 100%; }
+ 
+input,
+textarea {
+  padding: 1rem 1rem;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+ 
+input ~ span,
+textarea ~ span {
+  display: block;
+  width: 0;
+  height:2px;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.125s ease;
+  transition: all 0.125s ease;
+}
+ 
+input:focus,
+textarea:focus { outline: 0; }
+ 
+input:focus ~ span, 54
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+ 
+textarea {
+  width: 100%;
+  min-height: 15em;
+}
+
+.teamlid {
+  display: block;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #FFFFFF;
+}
+
+.logoklein {
+    width: 10%
+}
+
+.instagram {
+    color: black;
+}
+
+.instagram:hover {
+    color: red;
+}
+
+.facebook {
+    color: black;
+}
+
+.facebook:hover {
+    color: blue;
+}
+
+/*grid*/
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+	margin: 0px;
+}
+
+.eleven_grid {
+    background-color: gray;
+    width: 91.5%;
+    height: 40px;
+	float: left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.ten_grid {
+    background-color: gray;
+    width: 83%;
+    height: 40px;
+	float: left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.nine_grid {
+    background-color: gray;
+    width: 74.5%;
+    height: 40px;
+	float: left;
+	margin-left: 2%;
+    background-color: gray;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.eight_grid {
+    background-color: gray;
+    width: 66%;
+    height: 40px;
+	float: left;
+	margin-left: 2%;
+    background-color: gray;
+    margin-bottom: 8px;
+    text-align: center ;
+    border: 1px;
+    border-color: black;
+}
+
+.seven_grid {
+    background-color: gray;
+    width: 57.5%;
+    height: 40px;
+	float: left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.six_grid {
+    background-color: gray;
+    width: 49%;
+    height: 40px; 
+	float: left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.five_grid {
+    background-color: gray;
+    width: 40.5%; 
+    height: 40px;
+	margin-left: 2%;
+	float:left;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.four_grid {
+    background-color: gray;
+    width: 32%;
+    height: 40px;
+	float:left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.three_grid {
+    background-color: gray;
+    width: 23.5%;
+    height: 40px;
+	float:left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.two_grid {
+    background-color: gray;
+    width: 15%;
+    height: 40px;
+	float:left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.one_grid {
+    background-color: gray;
+    width: 6.5%;
+    height: 40px;
+	float:left;
+	margin-left: 2%;
+    margin-bottom: 8px;
+    text-align: center ;
+}
+
+.offset-12_grid { 
+    margin-left: 100%;
+    background-color: gray; 
+    height: 40px;
+    text-align: center ;
+}
+.offset-11_grid { 
+    margin-left: 91.666666666667%;
+    background-color: gray; 
+    height: 40px;
+    text-align: center ;
+ }
+.offset-10_grid { 
+    margin-left: 83.333333333333%;
+    background-color: gray;
+    height: 40px; 
+    text-align: center ;
+ }
+.offset-9_grid {  
+    margin-left: 75%; 
+    background-color: gray; 
+    height: 40px;
+    text-align: center ;
+}
+.offset-8_grid {  
+    margin-left: 66.666666666667%;
+    background-color: gray;
+    height: 40px;
+    text-align: center ; 
+ }
+.offset-7_grid {  
+    margin-left: 58.333333333333%;
+    background-color: gray;
+    height: 40px; 
+    text-align: center ;
+ }
+.offset-6_grid {  
+    margin-left: 50%;
+    background-color: gray;
+    height: 40px; 
+    text-align: center ;
+ }
+.offset-5_grid {  
+    margin-left: 41.666666666667%;
+    background-color: gray;
+    height: 40px; 
+    text-align: center ;
+ }
+.offset-4_grid {  
+    margin-left: 33.333333333333%;
+    background-color: gray;
+    height: 40px; 
+    text-align: center ;
+ }
+.offset-3_grid {  
+    margin-left: 25%;
+    background-color: gray;
+    height: 40px; 
+    text-align: center ;
+ }
+.offset-2_grid {  
+    margin-left: 16.666666666667%;
+    background-color: gray;
+    height: 40px; 
+    text-align: center ;
+ }
+.offset-1_grid {  
+    margin-left: 8.333333333333%;
+    background-color: gray; 
+    height: 40px;
+    text-align: center ;
+ }
+
+ /*navigatie*/
+ .sidenav {
+     height: 100%;
+     background-color: #FFFF00;
+     padding-top: 60px;
+ }
+.sidenav a {
+    padding: 8px 8px 10px 100px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+}
+
+
+a.active {
+    background-color: #B3E5FC;
+    color: #FFFF00;
+    font-family: 'Arvo', serif;
+    font-size: 70px
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #000000;
+}
+
+.navigation:hover {
+    background-color: #B3E5FC;
+}
+
+
+
